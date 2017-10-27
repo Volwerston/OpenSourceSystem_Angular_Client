@@ -7,8 +7,9 @@ import { SearchNoteComponent } from './components/search_note/search_note.compon
 import { SearchFileComponent } from './components/search_file/search_file.component'
 
 const appRoutes: Route[] = [
-		{path: 'notes', component: SearchNoteComponent },
-		{path: 'files', component: SearchFileComponent }
+		{ path: '', redirectTo: '/notes', pathMatch: 'full' },
+		{ path: 'notes', component: SearchNoteComponent },
+		{ path: 'files', component: SearchFileComponent }
 ];
 
 @NgModule({
