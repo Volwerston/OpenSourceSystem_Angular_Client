@@ -1,15 +1,11 @@
 import { Component } from '@angular/core';
+import {FileSearchOptions} from '../../classes/file_search_options'
 
-export class FileSearchOptions{
-	addingDate: Date = new Date();
-	title: string = "";
-	userName: string = "";
-	extension: string = "";
-}
 
 @Component({
   selector: 'my-app',
-  templateUrl: `app/templates/search_file.html`
+  templateUrl: `app/templates/search_file.html`,
+  providers: [FileSearchOptions]
 })
 export class SearchFileComponent  {
 	options: FileSearchOptions = new FileSearchOptions();
