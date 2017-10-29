@@ -35,4 +35,3 @@ export class SearchNoteComponent implements OnInit {
 		this.noteToAdd = new Note();
 	   }
 	}
-}
